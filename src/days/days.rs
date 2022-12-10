@@ -1,6 +1,8 @@
 use crate::days::{
     day1::*,
-    day2::*
+    day2::*,
+    day3::*,
+    day4::*
 };
 
 #[derive(Debug, Copy, Clone)]
@@ -69,10 +71,10 @@ impl From<i32> for Day  {
 pub fn run_day(day: Day) -> Result<(), String> {
     match day {
         Day::Zero => {},
-        Day::One => { let _ = day1::day_1(); let _ = day1::day_1_pt2(); }
+        Day::One => { day1::day_1(); day1::day_1_pt2(); }
         Day::Two => { day2::day2(); day2::day2_pt2(); }
-        Day::Three => { }
-        Day::Four => {}
+        Day::Three => { day3::day3(); day3::day3_pt2(); }
+        Day::Four => { day4::day4(); day4::day4_pt2(); }
         Day::Five => {}
         Day::Six => {}
         Day::Seven => {}
